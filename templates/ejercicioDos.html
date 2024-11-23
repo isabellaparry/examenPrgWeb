@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2 - Isabella Parry</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Ejercicio 2</h1>
+    <form method="POST" class="form-container">
+        <label for="user">Ingresa tu nombre:</label>
+        <input type="text" name="nombre"/> <br/>
+        <label for="clave">Ingresa tu contraseña:</label>
+        <input type="password" name="clave"/> <br/>
+        <button type="submit" value="Enviar" class="buttonLink">Enviar</button>
+    </form>
+
+    {% if mensajeBienvenida %}
+    <p>{{ mensajeBienvenida }}</p>
+    {% endif %}
+
+    <a href="/">Volver al inicio</a>
+</body>
+</html>

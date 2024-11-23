@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1 - Isabella Parry</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <form method="POST" class="form-container">
+        <label for="nombre">Ingresa tu nombre:</label>
+        <input type="text" name="nombre"/> <br/>
+        <label for="edad">Ingresa tu edad:</label>
+        <input type="number" name="edad"/> <br/>
+        <label for="ctadTarrosPintura">Ingresa la cantidad de tarros de pintura a comprar:</label>
+        <input type="number" name="ctadTarrosPintura"/> <br/>
+        <button type="submit" value="Enviar" class="buttonLink">Enviar</button>
+    </form>
+
+    {% if mensajeNombre %}
+    <p>{{ mensajeNombre }}</p>
+    {% endif %}
+
+    {% if mensajeTotalSinDcto %}
+    <p>{{ mensajeTotalSinDcto }}</p>
+    {% endif %}
+
+    {% if mensajeMontoDcto %}
+    <p>{{ mensajeMontoDcto }}</p>
+    {% endif %}
+
+    {% if mensajeTotalPagar %}
+    <p>{{ mensajeTotalPagar }}</p>
+    {% endif %}
+
+    <a href="/">Volver al inicio</a>
+</body>
+</html>
